@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount_should_not_exceed</fullName>
+    <active>false</active>
+    <description>Discount should not exceed from 25 percent.</description>
+    <errorConditionFormula>Discount__c  &gt; 0.25</errorConditionFormula>
+    <errorDisplayField>Discount__c</errorDisplayField>
+    <errorMessage>Discount should not exceed from 25%.</errorMessage>
+</ValidationRule>

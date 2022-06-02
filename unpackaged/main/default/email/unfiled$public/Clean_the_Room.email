@@ -1,0 +1,9 @@
+Hello Gairy,
+
+Housekeeping please get the room number {!Reservation__c.RoomId__c}, neat and 
+
+tidy before the guest {!Reservation__c.Contact__c} visit the room for the stay in hotel on {!Reservation__c.Check_IN_Date__c}.
+
+Thanks & Regards.
+
+Hotel Manager

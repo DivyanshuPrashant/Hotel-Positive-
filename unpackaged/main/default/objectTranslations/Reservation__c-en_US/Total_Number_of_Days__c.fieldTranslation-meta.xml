@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Enter the total number of days that the guest is going to stay. --></help>
+        <label><!-- Total Number of Days --></label>
+        <name>Total_Number_of_Days__c</name>
+    </CustomFieldTranslation>

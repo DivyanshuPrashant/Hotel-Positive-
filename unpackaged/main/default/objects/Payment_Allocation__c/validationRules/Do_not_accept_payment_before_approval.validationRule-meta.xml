@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_not_accept_payment_before_approval</fullName>
+    <active>false</active>
+    <description>Don&#39;t accept payment before approval</description>
+    <errorConditionFormula>NOT( ISPICKVAL( Customer_Invoice__r.Status__c , &quot;Approved&quot;) )</errorConditionFormula>
+    <errorDisplayField>Advance_Amount_Payment__c</errorDisplayField>
+    <errorMessage>Can&#39;t make a payment before the invoice gets approved.</errorMessage>
+</ValidationRule>

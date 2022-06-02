@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer_Invoices</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Customer Invoice Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Discount should not exceed from 25%. --></errorMessage>
+        <name>Discount_should_not_exceed</name>
+    </validationRules>
+    <workflowTasks>
+        <name>Customer_Invoice_Approval</name>
+        <subject><!-- Customer Invoice Approval --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Please Approve / Reject the invoice. --></description>
+        <name>Guest_Invoice_for_Approval</name>
+        <subject><!-- Guest Invoice for Approval --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Please Approve / Reject this invoice. --></description>
+        <name>Guest_Invoice_for_Approval_to_Director</name>
+        <subject><!-- Guest Invoice for Approval to Director --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Please approve / reject the customer invoice. --></description>
+        <name>New_Guest_In_voice_for_Approval</name>
+        <subject><!-- New Guest Invoice for Approval --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Please approve / reject the guest invoice created by the executive. --></description>
+        <name>New_Guest_Invoice_for_Approval</name>
+        <subject><!-- New Guest Invoice for Approval --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

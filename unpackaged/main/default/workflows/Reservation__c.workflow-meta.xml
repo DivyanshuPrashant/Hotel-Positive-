@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Farewell_Guest</fullName>
+        <description>Farewell Guest</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email_ID__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Farewell_Guest</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Guest_Mail</fullName>
+        <description>Welcome Guest Mail</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email_ID__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Welcome_Guest</template>
+    </alerts>
+    <rules>
+        <fullName>Clean the Room</fullName>
+        <actions>
+            <name>Clean_the_checked_IN_room</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Clean_the_Checked_IN_room</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Reservation__c.Check_IN_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Farewell Guest</fullName>
+        <actions>
+            <name>Farewell_Guest</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Reservation__c.Check_Out__c</field>
+            <operation>equals</operation>
+            <value>YES</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Guest Booking and Details</fullName>
+        <actions>
+            <name>Guest_Booking_and_Details</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Send_a_mail_to_Housekeeping</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Reservation__c.Check_IN_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Guest Check out Update</fullName>
+        <actions>
+            <name>Guest_Check_out_Update</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Reservation__c.Check_Out__c</field>
+            <operation>equals</operation>
+            <value>YES</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Welcome Guest</fullName>
+        <actions>
+            <name>Welcome_Guest_Mail</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Reservation__c.Check_IN_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Clean_the_Checked_IN_room</fullName>
+        <assignedTo>housekeeping.cleaning@hotelpositive.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Clean the room in which the guests has checked IN before they arrive.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Reservation__c.Check_IN_Date__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>Clean the Checked IN room.</subject>
+    </tasks>
+    <tasks>
+        <fullName>Clean_the_Checked_IN_rooms</fullName>
+        <assignedTo>housekeeping.cleaning@hotelpositive.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please get the checked IN room ready before the guest arrives.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Reservation__c.Check_IN_Date__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>Clean the Checked IN room.</subject>
+    </tasks>
+    <tasks>
+        <fullName>Send_a_mail_to_Housekeeping</fullName>
+        <assignedTo>divyanshu.prashant@hotelpositive.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please send a mail to housekeeping to inform them regarding the new reservation for the room.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Reservation__c.Check_IN_Date__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Send a mail to Housekeeping</subject>
+    </tasks>
+</Workflow>

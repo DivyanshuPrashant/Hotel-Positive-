@@ -1,0 +1,19 @@
+Hello Divyanshu Prashant.
+
+The guest {!Reservation__c.Contact__c} has successfully checked out from room number 
+
+{!Reservation__c.Room__c} and submitted their feedback for Welcome and Hospitality 
+
+Service, Cleaning service, Payment Procedures and See Off and Food Quality.
+
+Please check their feedback and if their overall feedback is below 5.0, please create a 
+
+case against that booking for further investigation and to improve our quality and services 
+
+overall.
+
+Thanks & Regards
+
+Service Desk & Reception
+
+Hotel Positive & Restaurants
