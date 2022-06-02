@@ -95,4 +95,75 @@
         <status>Not Started</status>
         <subject>New Guest Invoice for Approval</subject>
     </tasks>
+    <alerts>
+        <fullName>Approved_Invoice</fullName>
+        <description>Approved Invoice</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>divyanshu.prashant@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>finance.director@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>finance.manager@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hotel.executive@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>housekeeping.cleaning@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Booking_Invoice</template>
+    </alerts>
+    <alerts>
+        <fullName>Customer_Invoice_Approval_by_Finance_Manager</fullName>
+        <description>Invoice Approval by Finance Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>finance.manager@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Customer_Invoice_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Invoice_Approval</fullName>
+        <description>Invoice Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>finance.manager@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Customer_Invoice_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Invoice_Approval_by_Finance_Director</fullName>
+        <description>Invoice Approval by Finance Director</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>finance.director@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Customer_Invoice_Approval_to_Director</template>
+    </alerts>
+    <alerts>
+        <fullName>Invoice_Approval_by_Finance_Manager</fullName>
+        <description>Invoice Approval by Finance Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>finance.manager@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Customer_Invoice_Approval</template>
+    </alerts>
 </Workflow>

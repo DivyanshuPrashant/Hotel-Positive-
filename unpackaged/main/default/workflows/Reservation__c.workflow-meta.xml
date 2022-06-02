@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>Clean_the_checked_IN_room</fullName>
+        <description>Clean the checked IN room</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>housekeeping.cleaning@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Clean_the_Room</template>
+    </alerts>
+    <alerts>
         <fullName>Farewell_Guest</fullName>
         <description>Farewell Guest</description>
         <protected>false</protected>
@@ -10,6 +21,28 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Farewell_Guest</template>
+    </alerts>
+    <alerts>
+        <fullName>Guest_Booking_and_Details</fullName>
+        <description>Guest Booking and Details</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>divyanshu.prashant@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Guest_Booking_and_Details</template>
+    </alerts>
+    <alerts>
+        <fullName>Guest_Check_out_Update</fullName>
+        <description>Guest Check out Update</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>divyanshu.prashant@hotelpositive.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Guest_Check_out_Update</template>
     </alerts>
     <alerts>
         <fullName>Welcome_Guest_Mail</fullName>
