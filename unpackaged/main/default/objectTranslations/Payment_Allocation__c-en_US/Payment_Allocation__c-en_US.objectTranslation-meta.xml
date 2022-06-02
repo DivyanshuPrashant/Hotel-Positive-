@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Allocation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Allocations</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Payment Allocation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Can&apos;t make a payment before the invoice gets approved. --></errorMessage>
+        <name>Do_not_accept_payment_before_approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Outstanding amount is less than the amount the guest is paying. --></errorMessage>
+        <name>Not_more_than_the_invoice_amount</name>
+    </validationRules>
+</CustomObjectTranslation>

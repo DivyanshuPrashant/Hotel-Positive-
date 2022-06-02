@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Reservation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reservations</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Reservation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <workflowTasks>
+        <description><!-- Clean the room in which the guests has checked IN before they arrive. --></description>
+        <name>Clean_the_Checked_IN_room</name>
+        <subject><!-- Clean the Checked IN room. --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Please get the checked IN room ready before the guest arrives. --></description>
+        <name>Clean_the_Checked_IN_rooms</name>
+        <subject><!-- Clean the Checked IN room. --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Please send a mail to housekeeping to inform them regarding the new reservation for the room. --></description>
+        <name>Send_a_mail_to_Housekeeping</name>
+        <subject><!-- Send a mail to Housekeeping --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

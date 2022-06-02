@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#1F2021</headerColor>
+        <logo>outstandingprofessionaleleganttrend</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>Hotel Positive is a chain of hotels that is planning to build a system in salesforce to manage their customer review process and bookings.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Hotel Positive</label>
+    <navType>Standard</navType>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Reservation__c</tabs>
+    <tabs>Customer_Invoice__c</tabs>
+    <tabs>Payment_Allocation__c</tabs>
+    <tabs>Customer_Feedback__c</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>Room__c</tabs>
+    <tabs>standard-report</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Hotel_Positive_UtilityBar</utilityBar>
+</CustomApplication>

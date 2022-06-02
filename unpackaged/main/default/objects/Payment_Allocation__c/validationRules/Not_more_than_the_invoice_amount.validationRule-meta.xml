@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_more_than_the_invoice_amount</fullName>
+    <active>false</active>
+    <errorConditionFormula>(Customer_Invoice__r.Amount_Paid__c  + Advance_Amount_Payment__c)  &gt;  Customer_Invoice__r.Final_Amount__c</errorConditionFormula>
+    <errorDisplayField>Advance_Amount_Payment__c</errorDisplayField>
+    <errorMessage>Outstanding amount is less than the amount the guest is paying.</errorMessage>
+</ValidationRule>

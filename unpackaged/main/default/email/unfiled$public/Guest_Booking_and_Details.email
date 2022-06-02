@@ -1,0 +1,20 @@
+Hello,
+
+The guest {!Reservation__c.Contact__c} has created a reservation in your hotel 
+
+and their reservation number is {!Reservation__c.Name} they are going to check in
+
+on {!Reservation__c.Check_IN_Date__c} and the check out will happen on
+
+{!Reservation__c.Check_OUT_Date__c}. 
+
+Please send a mail to the housekeeping Gairy to inform him to make the room 
+
+{!Reservation__c.Room__c} neat and tidy before the guest arrives for their stay.
+
+
+Thanks & Regards 
+
+Service Desk & Reception
+
+Hotel Positive & Restaurants

@@ -1,0 +1,20 @@
+Hello, Finance Manager
+The guest {!Reservation__c.Contact__c} staying in {!Reservation__c.Account__c} 
+
+in room number {!Reservation__c.Room__c} for a total number of days 
+
+{!Reservation__c.Total_Number_of_Days__c} and their bill amount is 
+
+{!Reservation__c.Total_Price__c} and the discount given to the guest is 
+
+{!Customer_Invoice__c.Discount__c}% and the updated amount is {!Customer_Invoice__c.Final_Amount__c}.
+
+Please approve / reject the invoice after verifying the above details.
+
+Thanks & Regards 
+
+Executive 
+
+Gaurav Airy
+
+Hotel Positive & Restaurants.

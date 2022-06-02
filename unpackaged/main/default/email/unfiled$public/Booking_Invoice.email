@@ -1,0 +1,21 @@
+Hi {!Reservation__c.Contact__c},
+
+Hope you will have a great stay our hotel.
+
+This is invoice details regarding your booking.
+
+Invoice Number :- {!Customer_Invoice__c.Invoice_Date__c}.
+
+Total Amount to be paid:- {!Customer_Invoice__c.Final_Amount__c}.
+
+You can pay this amount partially or in an one-time
+
+payment before you check-out from hotel room.
+
+Hope you have a pleasant stay at our hotel.
+ 
+Thanks & Regards 
+
+Executive
+
+Hotel Positive & Restaurant.
